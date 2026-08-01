@@ -1,0 +1,12 @@
+body{margin:0;font-family:Arial}
+header{position:absolute;left:0;right:0;top:0;height:55px;background:#126b42;color:#fff;font-size:22px;font-weight:bold;display:flex;align-items:center;padding-left:20px;z-index:1000}
+#sidebar{position:absolute;top:65px;left:10px;width:270px;background:#fff;padding:15px;border-radius:10px;z-index:1000;box-shadow:0 2px 10px rgba(0,0,0,.3)}
+#map{position:absolute;top:55px;bottom:0;left:0;right:0}
+.c{display:inline-block;width:16px;height:16px;margin-right:6px}
+.red{background:#d7191c}.green{background:#1a9641}.yellow{background:#ffd92f}.blue{background:#5dade2}
+button{margin-top:10px;padding:10px;width:100%;background:#126b42;color:#fff;border:none;border-radius:6px;cursor:pointer}
+#modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:3000}
+#modal .box{width:80%;max-width:900px;margin:30px auto;background:#fff;padding:10px;border-radius:8px}
+#modal img{width:100%}#close{float:right;font-size:28px;cursor:pointer}
+
+.title{line-height:1.2}.title h2{margin:0;font-size:22px}.title p{margin:3px 0 0;font-size:13px;font-weight:400}

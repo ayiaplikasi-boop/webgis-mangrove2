@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WebGIS Mangrove</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<style>
+html,body,#map{height:100%;margin:0}
+.panel{position:absolute;z-index:1000;top:10px;left:10px;background:#fff;padding:10px;border-radius:8px;font-family:Arial;box-shadow:0 2px 8px rgba(0,0,0,.3)}
+</style>
+</head>
+<body>
+<div id="map"></div>
+<div class="panel">
+<b>Peta Sebaran Kerapatan Mangrove</b><br>
+Versi dari gambar (overlay).<br>
+Zoom dan pan tetap dapat digunakan.
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+var map=L.map('map',{crs:L.CRS.Simple,minZoom:-2});
+var bounds=[[0,0],[816,664]];
+L.imageOverlay('mangrove_overlay.png',bounds).addTo(map);
+map.fitBounds(bounds);
+L.control.scale().addTo(map);
+</script>
+</body>
+</html>
